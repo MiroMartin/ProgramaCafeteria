@@ -1,5 +1,8 @@
 package logica;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Mesa {
     private int numMesa;
     private String nomCamarero;
@@ -46,4 +49,15 @@ public class Mesa {
                 ", articulos: " + articulos +
                 '}';
     }
+    static void abrirMesas(ArrayList<Mesa> mesas){
+        System.out.println("Elija la mesa deseada");
+        Scanner teclado2 = new Scanner(System.in);
+        int num = teclado2.nextInt();
+        Mesa mesa = new Mesa();
+        mesa.setNumMesa(num);
+        System.out.println("Ingrese el nombre del camarero");
+        String nom = teclado2.next();
+        mesas.add(mesa);
+    }
+
 }
