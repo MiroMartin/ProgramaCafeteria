@@ -57,6 +57,7 @@ public class Mesa {
         mesa.setNumMesa(num);
         System.out.println("Ingrese el nombre del camarero");
         String nom = teclado2.next();
+        mesa.setNomCamarero(nom);
         mesas.add(mesa);
     }
 
